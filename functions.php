@@ -76,3 +76,80 @@ function whiterogue_set_session_values() {
 }
 add_action('init', 'whiterogue_set_session_values');
 
+/**********************************
+ * REGISTERS WIDGET AREAS
+ **********************************/
+function whiterogue_widgets_init() {
+    register_sidebar(array(
+        'name'          => 'Footer Sidebar PFF 1',
+        'id'            => 'sidebar-footer-1',
+        'before_widget' => '<div id="%1$s" class="%2$s widget-footer">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h3 class="widget-footer-title">',
+        'after_title'   => '</h3>',
+    ));
+
+    register_sidebar(array(
+        'name'          => 'Footer Sidebar PFF 2',
+        'id'            => 'sidebar-footer-2',
+        'before_widget' => '<div id="%1$s" class="%2$s widget-footer">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h3 class="widget-footer-title">',
+        'after_title'   => '</h3>',
+    ));
+
+    register_sidebar(array(
+        'name'          => 'Footer Sidebar PFF 3',
+        'id'            => 'sidebar-footer-3',
+        'before_widget' => '<div id="%1$s" class="%2$s widget-footer">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h3 class="widget-footer-title">',
+        'after_title'   => '</h3>',
+    ));
+
+    register_sidebar(array(
+        'name'          => 'Footer Sidebar PFF 4',
+        'id'            => 'sidebar-footer-4',
+        'before_widget' => '<div id="%1$s" class="%2$s widget-footer">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h3 class="widget-footer-title">',
+        'after_title'   => '</h3>',
+    ));
+
+    register_sidebar(array(
+        'name'          => 'Footer Sidebar PFE 1',
+        'id'            => 'sidebar-footer-pfe-1',
+        'before_widget' => '<div id="%1$s" class="%2$s widget-footer-pfe">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h3 class="widget-footer-title-pfe">',
+        'after_title'   => '</h3>',
+    ));
+
+    register_sidebar(array(
+        'name'          => 'Footer Sidebar PFE 2',
+        'id'            => 'sidebar-footer-pfe-2',
+        'before_widget' => '<div id="%1$s" class="%2$s widget-footer-pfe">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h3 class="widget-footer-title-pfe">',
+        'after_title'   => '</h3>',
+    ));
+
+    register_sidebar(array(
+        'name'          => 'Footer Sidebar PFE 3',
+        'id'            => 'sidebar-footer-pfe-3',
+        'before_widget' => '<div id="%1$s" class="%2$s widget-footer-pfe">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h3 class="widget-footer-title-pfe">',
+        'after_title'   => '</h3>',
+    ));
+
+    register_sidebar(array(
+        'name'          => 'Footer Sidebar PFE 4',
+        'id'            => 'sidebar-footer-pfe-4',
+        'before_widget' => '<div id="%1$s" class="%2$s widget-footer-pfe">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h3 class="widget-footer-title-pfe">',
+        'after_title'   => '</h3>',
+    ));
+}
+add_action( 'widgets_init', 'whiterogue_widgets_init' );
